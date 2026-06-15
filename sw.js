@@ -1,9 +1,9 @@
-const CACHE_NAME = "mesai-pwa-mobile-v62-bottom-nav";
+const CACHE_NAME = "mesai-pwa-mobile-v63-bottom-nav";
 const FILES = [
   "./",
-  "./index.html?v=62",
-  "./app.js?v=62",
-  "./manifest.json?v=62",
+  "./index.html?v=63",
+  "./app.js?v=63",
+  "./manifest.json?v=63",
   "./icon.svg",
   "./polis-logo.png"
 ];
@@ -35,7 +35,7 @@ self.addEventListener("fetch", event => {
           caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
           return response;
         })
-        .catch(() => caches.match(request).then(cached => cached || caches.match("./index.html?v=62")))
+        .catch(() => caches.match(request).then(cached => cached || caches.match("./index.html?v=63")))
     );
     return;
   }

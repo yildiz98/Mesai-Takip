@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-title" content="Cezaevi Mesai" />
   <link rel="apple-touch-icon" href="polis-logo.png" />
   <title>CEZAEVİ MESAİ TAKİP</title>
-  <link rel="manifest" href="manifest.json?v=62" />
+  <link rel="manifest" href="manifest.json?v=63" />
   <meta name="theme-color" content="#061326" />
   <style>
     :root{
@@ -961,7 +961,124 @@ header .author::before{display:none!important;content:none!important;}
   .app-stat em{font-size:24px!important;right:12px!important;}
 }
 
-  </style>
+  
+
+/* V63 FINAL MOBİL HEADER DÜZELTME - hazırlayan yazısı sağda sabit */
+header{
+  position:sticky!important;
+  top:0!important;
+  z-index:999!important;
+  display:grid!important;
+  grid-template-columns:56px minmax(0,1fr) 118px!important;
+  grid-template-rows:1fr!important;
+  align-items:center!important;
+  gap:8px!important;
+  width:100%!important;
+  max-width:430px!important;
+  min-height:82px!important;
+  margin:0 auto!important;
+  padding:9px 10px!important;
+  background:linear-gradient(135deg,#061326 0%,#09244a 60%,#061326 100%)!important;
+  border-bottom:1px solid rgba(244,176,0,.48)!important;
+  border-left:0!important;
+  border-right:0!important;
+  border-radius:0!important;
+  overflow:visible!important;
+  text-align:left!important;
+}
+header::before, header::after{display:none!important;content:none!important;}
+header .logo{
+  display:block!important;
+  grid-column:1!important;
+  grid-row:1!important;
+  width:54px!important;
+  height:54px!important;
+  object-fit:contain!important;
+  margin:0!important;
+  opacity:1!important;
+  visibility:visible!important;
+  filter:drop-shadow(0 6px 12px rgba(0,0,0,.45))!important;
+}
+header .header-title{
+  grid-column:2!important;
+  grid-row:1!important;
+  min-width:0!important;
+  padding:0!important;
+}
+header h1{
+  display:block!important;
+  margin:0!important;
+  font-size:16px!important;
+  line-height:1.1!important;
+  font-weight:900!important;
+  letter-spacing:.2px!important;
+  color:#ffd15c!important;
+  -webkit-text-fill-color:#ffd15c!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+}
+header p{
+  display:block!important;
+  margin:3px 0 0!important;
+  font-size:9.5px!important;
+  line-height:1.15!important;
+  color:#dbe6f4!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+}
+header .author{
+  display:block!important;
+  grid-column:3!important;
+  grid-row:1!important;
+  justify-self:end!important;
+  align-self:center!important;
+  max-width:118px!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  font-size:0!important;
+  line-height:1.15!important;
+  text-align:right!important;
+  white-space:normal!important;
+  color:#ffd15c!important;
+  -webkit-text-fill-color:#ffd15c!important;
+  text-shadow:0 0 10px rgba(244,176,0,.25)!important;
+}
+header .author::before{
+  display:block!important;
+  content:'Hazırlayan'!important;
+  font-size:9px!important;
+  font-weight:700!important;
+  color:#dbe6f4!important;
+  -webkit-text-fill-color:#dbe6f4!important;
+  margin-bottom:2px!important;
+}
+header .author::after{
+  display:block!important;
+  content:'PM. Hüseyin YILDIZ'!important;
+  font-size:10px!important;
+  font-weight:900!important;
+  color:#ffd15c!important;
+  -webkit-text-fill-color:#ffd15c!important;
+}
+.app-stat span{padding-right:42px!important;}
+.app-stat em{top:16px!important;right:16px!important;left:auto!important;transform:none!important;}
+@media (max-width:390px){
+  header{grid-template-columns:50px minmax(0,1fr) 104px!important;gap:7px!important;min-height:78px!important;padding:8px 8px!important;}
+  header .logo{width:48px!important;height:48px!important;}
+  header h1{font-size:14px!important;line-height:1.05!important;}
+  header p{font-size:8.6px!important;}
+  header .author{max-width:104px!important;}
+  header .author::before{font-size:8px!important;}
+  header .author::after{font-size:8.8px!important;}
+}
+
+</style>
 </head>
 <body>
   <header>
@@ -1151,6 +1268,6 @@ header .author::before{display:none!important;content:none!important;}
     </main>
   </div>
   <footer>Mesai Takip • Ana ekrana kurulan mobil PWA</footer>
-  <script src="app.js?v=62"></script>
+  <script src="app.js?v=63"></script>
 </body>
 </html>
