@@ -1,7 +1,7 @@
 {
   "name": "Cezaevi Mesai Takip",
-  "short_name": "Cezaevi Mesai",
-  "start_url": "./index.html?v=61",
+  "short_name": "Cezaevi V62",
+  "start_url": "./index.html?v=62",
   "display": "standalone",
   "background_color": "#030b16",
   "theme_color": "#061326",

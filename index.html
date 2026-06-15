@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-title" content="Cezaevi Mesai" />
   <link rel="apple-touch-icon" href="polis-logo.png" />
   <title>CEZAEVİ MESAİ TAKİP</title>
-  <link rel="manifest" href="manifest.json?v=61" />
+  <link rel="manifest" href="manifest.json?v=62" />
   <meta name="theme-color" content="#061326" />
   <style>
     :root{
@@ -752,7 +752,7 @@ main{padding:18px!important;min-width:0!important;background:linear-gradient(180
 
   
 
-/* V61 MOBİL ODAKLI DÜZEN - üstte logo/yazı/hazırlayan, altta menü */
+/* V62 MOBİL ODAKLI DÜZEN - üstte logo/yazı/hazırlayan, altta menü */
 body{
   padding-bottom:calc(84px + env(safe-area-inset-bottom))!important;
   background:linear-gradient(180deg,#061326 0%,#020914 100%)!important;
@@ -868,6 +868,97 @@ table{min-width:520px!important;}
   header .author{font-size:9px!important;}
   .menu-btn,.panel .menu-btn{font-size:9px!important;}
   .menu-btn.primary-action .nav-icon{width:40px!important;height:40px!important;}
+}
+
+  
+
+/* V62 DÜZELTME: Telefon üst alanı + kart ikon hizası */
+header{
+  display:grid!important;
+  grid-template-columns:58px minmax(0,1fr)!important;
+  grid-template-rows:auto auto!important;
+  align-items:center!important;
+  column-gap:10px!important;
+  row-gap:2px!important;
+  max-width:430px!important;
+  min-height:78px!important;
+  margin:0 auto!important;
+  padding:8px 12px!important;
+}
+header::before, header::after{display:none!important;content:none!important;}
+header .logo{
+  display:block!important;
+  grid-row:1 / 3!important;
+  grid-column:1!important;
+  width:54px!important;
+  height:54px!important;
+  object-fit:contain!important;
+  margin:0!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+header .header-title{grid-column:2!important;grid-row:1!important;min-width:0!important;}
+header h1{
+  display:block!important;
+  font-size:16px!important;
+  line-height:1.08!important;
+  margin:0!important;
+  color:#ffd15c!important;
+  letter-spacing:.2px!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+}
+header p{
+  display:block!important;
+  font-size:10px!important;
+  line-height:1.15!important;
+  margin:2px 0 0!important;
+  color:#dbe6f4!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+}
+header .author{
+  display:block!important;
+  grid-column:2!important;
+  grid-row:2!important;
+  justify-self:start!important;
+  align-self:start!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  color:#fff!important;
+  font-size:10px!important;
+  line-height:1.15!important;
+  text-align:left!important;
+  white-space:normal!important;
+  max-width:100%!important;
+}
+header .author::before{display:none!important;content:none!important;}
+.app-stat{position:relative!important;padding:15px 14px!important;overflow:hidden!important;}
+.app-stat span{position:relative!important;z-index:2!important;display:block!important;padding-right:34px!important;line-height:1.15!important;}
+.app-stat em{
+  position:absolute!important;
+  top:12px!important;
+  right:14px!important;
+  left:auto!important;
+  bottom:auto!important;
+  font-size:26px!important;
+  line-height:1!important;
+  opacity:.95!important;
+  transform:none!important;
+}
+.app-stat strong{display:block!important;margin-top:22px!important;}
+@media (max-width:390px){
+  header{grid-template-columns:50px minmax(0,1fr)!important;padding:7px 9px!important;column-gap:8px!important;min-height:74px!important;}
+  header .logo{width:48px!important;height:48px!important;}
+  header h1{font-size:14px!important;}
+  header p{font-size:9px!important;}
+  header .author{font-size:9px!important;}
+  .app-stat span{font-size:10px!important;padding-right:30px!important;}
+  .app-stat em{font-size:24px!important;right:12px!important;}
 }
 
   </style>
@@ -1060,6 +1151,6 @@ table{min-width:520px!important;}
     </main>
   </div>
   <footer>Mesai Takip • Ana ekrana kurulan mobil PWA</footer>
-  <script src="app.js?v=61"></script>
+  <script src="app.js?v=62"></script>
 </body>
 </html>

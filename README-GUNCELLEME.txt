@@ -1,1 +1,1 @@
-V61 mobil odaklı sürüm. Üstte logo, başlık ve Hazırlayan PM. Hüseyin YILDIZ yazısı var. Sol/yan menü kaldırıldı, sadece alt menü bırakıldı. Mavi/altın premium tema ve güncel cezaevi logosu kullanıldı. Cache sürümü v61 yapıldı.
+V62: Telefon üst alanında logo, başlık ve Hazırlayan PM. Hüseyin YILDIZ görünümü düzeltildi. Kart içi ikon hizaları düzeltildi. Cache v62 yapıldı.
