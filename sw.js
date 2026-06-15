@@ -1,4 +1,4 @@
-const CACHE_NAME = "mesai-pwa-mobile-v50-bottom-nav";
+const CACHE_NAME = "mesai-pwa-mobile-v60-bottom-nav";
 const FILES = [
   "./",
   "./index.html?v=50",

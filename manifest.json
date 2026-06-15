@@ -1,7 +1,7 @@
 {
-  "name": "Mesai Takip",
-  "short_name": "Mesai %50",
-  "start_url": "./index.html?v=50",
+  "name": "Cezaevi Mesai Takip",
+  "short_name": "Cezaevi Mesai",
+  "start_url": "./index.html?v=60",
   "display": "standalone",
   "background_color": "#030b16",
   "theme_color": "#061326",
