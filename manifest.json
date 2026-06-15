@@ -1,0 +1,22 @@
+{
+  "name": "Mesai Takip",
+  "short_name": "Mesai %50",
+  "start_url": "./index.html?v=50",
+  "display": "standalone",
+  "background_color": "#030b16",
+  "theme_color": "#061326",
+  "description": "Telefonda ana ekrana kurulan kart tabanlı mobil mesai takip uygulaması.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "orientation": "portrait"
+}
